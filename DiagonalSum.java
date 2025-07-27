@@ -5,7 +5,7 @@ public class DiagonalSum {
             for(int j=0;j<matrix[0].length;j++){
                 if(i==j)
                     sum=sum+matrix[i][j];
-                else if(i+j==matrix.length-1){
+                else if(i+j==matrix.length+1){
                     sum=sum+matrix[i][j];
                 }
             }

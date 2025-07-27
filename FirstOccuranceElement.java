@@ -3,7 +3,7 @@ public class FirstOccuranceElement {
         if(arr[i]==key){
             return i;
         }
-        if(i==arr.length){
+        if(i>=arr.length){
             return -1;
         }
         return findFirstOcurrance(arr, key, i+1);
