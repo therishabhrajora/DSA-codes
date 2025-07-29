@@ -1,21 +1,9 @@
-class Node {
-    int data;
-    Node next;
-    Node prev;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-        this.prev = null;
-    }
-}
-
 public class DoublyLL {
-    static Node head;
-    static Node tail;
+    static NodeDll head;
+    static NodeDll tail;
 
     public static void addFirst(int data) {
-        Node newnode = new Node(data);
+        NodeDll newnode = new NodeDll(data);
         if (head == null) {
             head = tail = newnode;
         }
@@ -26,7 +14,7 @@ public class DoublyLL {
     }
 
     public static void addLast(int data) {
-        Node newnode = new Node(data);
+        NodeDll newnode = new NodeDll(data);
         if (head == null) {
             head = tail = newnode;
         } else {
@@ -37,7 +25,7 @@ public class DoublyLL {
     }
 
     public static void print() {
-        Node temp = head;
+        NodeDll temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
